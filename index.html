@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+    </script>
+    <title>Vanilla</title>
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <main class="grid">
+        <div class="grid-square-turn">
+            <span class="material-symbols-outlined turn-i">
+                close
+            </span>
+            <div class="turn-text">
+                Player 1 Turn.
+            </div>
+        </div>
+        <div class="grid-square-menu">
+            <button class="btn-action">Actions
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+            </button>
+
+            <div class="menu-options hidden">
+                <button>Reset</button>
+                <button>New Game</button>
+            </div>
+        </div>
+        <div class="grid-square"></div>
+        <div class="grid-square"></div>
+        <div class="grid-square"></div>
+        <div class="grid-square"></div>
+        <div class="grid-square"></div>
+        <div class="grid-square"></div>
+        <div class="grid-square"></div>
+        <div class="grid-square"></div>
+        <div class="grid-square"></div>
+        <div class="grid-square-score player1">
+            <p>Player 1</p>
+            <span data-id="player-1-stats">0 wins</span>
+        </div>
+        <div class="grid-square-score player2">
+            <p>Ties</p>
+            <span data-id="player-ties">0</span>
+        </div>
+        <div class="grid-square-score player3">
+            <p>Player 2</p>
+            <span data-id="player-2-stats">0 wins</span>
+        </div>
+    </main>
+
+<script src="./script.js"></script>
+</body>
+</html>
