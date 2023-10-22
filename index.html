@@ -20,7 +20,7 @@
                 close
             </span>
             <div class="turn-text">
-                Player 1 Turn.
+                Player X Turn.
             </div>
         </div>
         <div class="grid-square-menu">
@@ -30,33 +30,63 @@
                 </span>
             </button>
 
-            <div class="menu-options hidden">
-                <button>Reset</button>
-                <button>New Game</button>
+            <div class="menu-options hidden" data-id="menu-items">
+                <button class="btn-reset">Reset</button>
+                <button class="btn-new-game">New Game</button>
             </div>
         </div>
-        <div class="grid-square"></div>
-        <div class="grid-square"></div>
-        <div class="grid-square"></div>
-        <div class="grid-square"></div>
-        <div class="grid-square"></div>
-        <div class="grid-square"></div>
-        <div class="grid-square"></div>
-        <div class="grid-square"></div>
-        <div class="grid-square"></div>
+        <!-- grids -->
+        <div id="0" class="grid-square" data-id="data-cell">
+            <span class="material-symbols-outlined turn-i"></span>
+        </div>
+        <div id="1" class="grid-square" data-id="data-cell">
+            <span class="material-symbols-outlined turn-i"></span>
+        </div>
+        <div id="2" class="grid-square" data-id="data-cell">
+            <span class="material-symbols-outlined turn-i"></span>
+        </div>
+        <div id="3" class="grid-square" data-id="data-cell">
+            <span class="material-symbols-outlined turn-i"></span>
+        </div>
+        <div id="4" class="grid-square" data-id="data-cell">
+            <span class="material-symbols-outlined turn-i"></span>
+        </div>
+        <div id="5" class="grid-square" data-id="data-cell">
+            <span class="material-symbols-outlined turn-i"></span>
+        </div>
+        <div id="6" class="grid-square" data-id="data-cell">
+            <span class="material-symbols-outlined turn-i"></span>
+        </div>
+        <div id="7" class="grid-square" data-id="data-cell">
+            <span class="material-symbols-outlined turn-i"></span>
+        </div>
+        <div id="8" class="grid-square" data-id="data-cell">
+            <span class="material-symbols-outlined turn-i"></span>
+        </div> 
+        <!-- scores -->
         <div class="grid-square-score player1">
-            <p>Player 1</p>
-            <span data-id="player-1-stats">0 wins</span>
+            <p>Player X</p>
+            <span class="player-1-stats">0 wins</span>
         </div>
         <div class="grid-square-score player2">
             <p>Ties</p>
-            <span data-id="player-ties">0</span>
+            <span class="player-ties">0</span>
         </div>
         <div class="grid-square-score player3">
-            <p>Player 2</p>
-            <span data-id="player-2-stats">0 wins</span>
+            <p>Player O</p>
+            <span class="player-2-stats">0 wins</span>
         </div>
     </main>
+    
+    <!-- modal -->
+    <div class="modal hidden">
+        <div class="modal-content">
+            <p>Player X wins!</p>
+            <button>
+                Play Again
+            </button>
+        </div>
+    </div>
 
 <script src="./script.js"></script>
 </body>
